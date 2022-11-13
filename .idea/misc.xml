@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/comprarpelicula.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/paginaprincipal.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/peliculacomprada.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/registro.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/black/AndroidStudioProjects/AlquilerPelicula/app/src/main/res/layout/registrotarjeta.xml" value="0.17074275362318841" />
       </map>
