@@ -28,8 +28,8 @@ public class login extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etPassword = findViewById(R.id.etpassword);
         mAuth = FirebaseAuth.getInstance();
-
     }
+
     public void Loguearse(View view) {
 
         Intent intent = new Intent(this, paginaprincipal.class);
@@ -61,5 +61,4 @@ public class login extends AppCompatActivity {
         }
 
     }
-
 }

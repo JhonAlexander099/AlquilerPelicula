@@ -22,10 +22,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class registro extends AppCompatActivity {
-    EditText etNombre, etApellidos, etCorreo, etContraseña, etVerificarContra;
+    EditText etNombre, etApellidos, etCorreo, etContraseña,etVerificarContra;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,9 @@ public class registro extends AppCompatActivity {
         etCorreo = findViewById(R.id.etCorreo);
         etContraseña = findViewById(R.id.etContraseña);
         etVerificarContra = findViewById(R.id.etVerificarContra);
+
     }
+
     public void ContinuatTarjeta(View view) {
 
         Intent intent = new Intent(this, registroTarjeta.class);

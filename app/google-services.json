@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220056722405",
+    "project_id": "alquilerpelicula-f0a5d",
+    "storage_bucket": "alquilerpelicula-f0a5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220056722405:android:64fed2468d0aedf801ad0c",
+        "android_client_info": {
+          "package_name": "com.example.alquilerpelicula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220056722405-ofkrgetr5u6qqfa5ag6b5vlcal0a76kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLLEHLw8Nt2yUqbXRqdhl2L7-z0TSb9Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220056722405-ofkrgetr5u6qqfa5ag6b5vlcal0a76kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

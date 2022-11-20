@@ -1,6 +1,8 @@
 package com.example.alquilerpelicula;
 
 public class Pelicula {
+
+
     private String id;
     private String poster;
     private String titulo;
@@ -14,6 +16,8 @@ public class Pelicula {
         this.genero = genero;
         this.sinopsis = sinopsis;
     }
+
+
 
     public String getId() {
         return id;

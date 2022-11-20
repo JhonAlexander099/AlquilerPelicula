@@ -19,8 +19,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class registroTarjeta extends AppCompatActivity {
-    EditText etNrnTarjeta, etFechaVencimiento, etCvv;
+    EditText etNrnTarjeta,etFechaVencimiento, etCvv;
     FirebaseFirestore db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,6 @@ public class registroTarjeta extends AppCompatActivity {
         etNrnTarjeta = findViewById(R.id.etNrnTarjeta);
         etFechaVencimiento = findViewById(R.id.etFechaVencimiento);
         etCvv = findViewById(R.id.etCvv);
-
     }
 
     public void Registrarse(View view) {
