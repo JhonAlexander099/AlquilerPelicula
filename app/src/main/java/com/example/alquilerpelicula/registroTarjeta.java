@@ -19,9 +19,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class registroTarjeta extends AppCompatActivity {
-    EditText etNrnTarjeta,etFechaVencimiento, etCvv;
+    EditText etNrnTarjeta,etFechaVencimiento, etCvC;
     FirebaseFirestore db;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,7 @@ public class registroTarjeta extends AppCompatActivity {
 
         etNrnTarjeta = findViewById(R.id.etNrnTarjeta);
         etFechaVencimiento = findViewById(R.id.etFechaVencimiento);
-        etCvv = findViewById(R.id.etCvv);
+        etCvC = findViewById(R.id.etCvv);
     }
 
     public void Registrarse(View view) {
@@ -40,7 +39,7 @@ public class registroTarjeta extends AppCompatActivity {
 
         String nrnTarjeta = etNrnTarjeta.getText().toString();
         String fechavencimiento = etFechaVencimiento.getText().toString();
-        String cvv = etCvv.getText().toString();
+        String cvv = etCvC.getText().toString();
         String id = getIntent().getExtras().getString("id");
 
         if(!nrnTarjeta.isEmpty() && !fechavencimiento.isEmpty() && !cvv.isEmpty()){
@@ -69,7 +68,7 @@ public class registroTarjeta extends AppCompatActivity {
                                 }
                             });
                 }else{
-                    Toast.makeText(this, "CVV no valido", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "CVC no valido", Toast.LENGTH_SHORT).show();
                 }
             }else{
                 Toast.makeText(this, "El numero de tarjeta no es valido", Toast.LENGTH_SHORT).show();

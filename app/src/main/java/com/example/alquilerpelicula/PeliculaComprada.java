@@ -25,7 +25,6 @@ public class PeliculaComprada extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.peliculacomprada);
 
-
         tvtitulo02 = findViewById(R.id.tvtitulo02);
         tvsinopsis02 = findViewById(R.id.tvsinopsis02);
         tvgenero02 = findViewById(R.id.tvgenero02);
@@ -47,7 +46,6 @@ public class PeliculaComprada extends AppCompatActivity {
                             genero = documentSnapshot.getString("genero");
                             sinopsis = documentSnapshot.getString("sinopsis");
                             portada = documentSnapshot.getString("portada");
-
 
                             tvtitulo02.setText(titulo);
                             tvsinopsis02.setText(sinopsis);
@@ -75,7 +73,6 @@ public class PeliculaComprada extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
     public void VerlaPelicula(View view) {
         Intent intent = new Intent(this, ViendoPelicula.class);

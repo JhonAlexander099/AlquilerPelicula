@@ -34,8 +34,6 @@ public class paginaprincipal extends AppCompatActivity {
     List<Pelicula> resultado;
     private Menu menu2;
 
-    //SearchView searchView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

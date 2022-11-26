@@ -4,13 +4,10 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -42,7 +39,6 @@ public class AdaptadorPelicula extends RecyclerView.Adapter<AdaptadorPelicula.Vi
         ViewHolder miViewHolder = new AdaptadorPelicula.ViewHolder(vista);
         return miViewHolder;
     }
-
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
@@ -79,7 +75,6 @@ public class AdaptadorPelicula extends RecyclerView.Adapter<AdaptadorPelicula.Vi
             btnpelicula.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Toast.makeText(vista.getContext(), "pelicula :"+pelicula.getIdcliente(), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(vista.getContext(), mostrarpelicula.class);
                     intent.putExtra("id",pelicula.getId());
                     vista.getContext().startActivity(intent);
@@ -118,8 +113,6 @@ public class AdaptadorPelicula extends RecyclerView.Adapter<AdaptadorPelicula.Vi
             notifyDataSetChanged();
         }
     };
-
-
 
     public Filter getFilter2() {
         return exampleFilter2;

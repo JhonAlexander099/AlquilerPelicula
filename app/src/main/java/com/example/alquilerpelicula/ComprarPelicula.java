@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ComprarPelicula extends AppCompatActivity{
-    TextView tvcostocompra,tvtitulocompra,tvnumerocompra,tvfechacompra,tvcvvcompra;
+    TextView tvcostocompra,tvtitulocompra,tvnumerocompra,tvfechacompra,tvcvccompra;
     FirebaseFirestore db;
     FirebaseAuth mAuth;
     @Override
@@ -41,7 +41,7 @@ public class ComprarPelicula extends AppCompatActivity{
         tvtitulocompra = findViewById(R.id.tvtitulocompra);
         tvnumerocompra = findViewById(R.id.tvnumerocompra);
         tvfechacompra = findViewById(R.id.tvfechacompra);
-        tvcvvcompra = findViewById(R.id.tvcvvcompra);
+        tvcvccompra = findViewById(R.id.tvcvvcompra);
 
         mAuth = FirebaseAuth.getInstance();
         String idcliente = mAuth.getCurrentUser().getUid();
@@ -75,18 +75,14 @@ public class ComprarPelicula extends AppCompatActivity{
 
                             tvnumerocompra.setText(numero);
                             tvfechacompra.setText(fechacaducacion);
-                            tvcvvcompra.setText(cvc);
+                            tvcvccompra.setText(cvc);
                         }
                     }
                 });
 
-
-
-
     }
 
     public void ComparPelicula(View view) {
-        // Intent intent = new Intent(this, PeliculaComprada.class);
 
         String idclienteg = getIntent().getExtras().getString("id");
         String idpeliculag = mAuth.getCurrentUser().getUid();

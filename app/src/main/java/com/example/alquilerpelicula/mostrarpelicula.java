@@ -60,17 +60,6 @@ public class mostrarpelicula extends AppCompatActivity {
                     }
                 });
 
-/*
-        db.collection("Pelicula").document("id")
-                .get()
-                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        String id = documentSnapshot.getId();
-                        //String titulo = documentSnapshot.getString("titulo");
-                        Toast.makeText(getApplicationContext(), "Titulo "+id, Toast.LENGTH_SHORT).show();
-                    }
-                });*/
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -87,7 +76,6 @@ public class mostrarpelicula extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
     public void IraComprar(View view) {
         Intent intent = new Intent(this, ComprarPelicula.class);

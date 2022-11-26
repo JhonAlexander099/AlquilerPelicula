@@ -2,7 +2,6 @@ package com.example.alquilerpelicula;
 
 public class Pelicula {
 
-
     private String id;
     private String poster;
     private String titulo;
