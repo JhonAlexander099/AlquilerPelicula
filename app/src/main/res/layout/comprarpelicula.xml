@@ -24,7 +24,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="64dp"
-        android:text="Compar Pelicula"
+        android:text="Comprar Pelicula"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
